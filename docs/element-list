@@ -1,0 +1,11 @@
+by.bsuir.task2.dao
+by.bsuir.task2.dao.creator
+by.bsuir.task2.dao.creator.impl
+by.bsuir.task2.dao.impl
+by.bsuir.task2.entity
+by.bsuir.task2.entity.criteria
+by.bsuir.task2.main
+by.bsuir.task2.service
+by.bsuir.task2.service.impl
+by.bsuir.task2.service.validation
+by.bsuir.task2.service.validation.impl
