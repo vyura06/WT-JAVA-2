@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 <h1 title="Class CriteriaValidatorImpl" class="title">Class CriteriaValidatorImpl</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">by.bsuir.task2.service.validation.impl.CriteriaValidatorImpl</div>
+<div class="inheritance">com.lab2.service.validation.impl.CriteriaValidatorImpl</div>
 </div>
 <section class="description">
 <dl class="notes">
@@ -99,7 +99,7 @@ implements <a href="../CriteriaValidator.html" title="interface in by.bsuir.task
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><span class="member-name-link"><a href="#%3Cinit%3E(java.lang.String%5B%5D,by.bsuir.task2.service.validation.ValueValidator)">CriteriaValidatorImpl</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;allowedTypes,
- <a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;valueValidator)</code></div>
+ <a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;validator)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Instantiates criteria validator object</div>
 </div>
@@ -118,7 +118,7 @@ implements <a href="../CriteriaValidator.html" title="interface in by.bsuir.task
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="../CriteriaValidator.html" title="interface in by.bsuir.task2.service.validation">CriteriaValidator</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#create(by.bsuir.task2.service.validation.ValueValidator,java.lang.String...)">create</a></span>&#8203;(<a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;valueValidator,
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#create(com.lab2.service.validation.Validator,java.lang.String...)">create</a></span>&#8203;(<a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;validator,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;allowedTypes)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates criteria validator in a simpler way with varargs</div>
@@ -150,12 +150,12 @@ implements <a href="../CriteriaValidator.html" title="interface in by.bsuir.task
 <section class="detail" id="&lt;init&gt;(java.lang.String[],by.bsuir.task2.service.validation.ValueValidator)">
 <h3>CriteriaValidatorImpl</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">CriteriaValidatorImpl</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;allowedTypes,
- <a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;valueValidator)</span></div>
+ <a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;validator)</span></div>
 <div class="block">Instantiates criteria validator object</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>allowedTypes</code> - array of all allowed search types for this search criteria</dd>
-<dd><code>valueValidator</code> - correct validator for this search value</dd>
+<dd><code>validator</code> - correct validator for this search value</dd>
 </dl>
 </section>
 </li>
@@ -168,14 +168,14 @@ implements <a href="../CriteriaValidator.html" title="interface in by.bsuir.task
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="create(by.bsuir.task2.service.validation.ValueValidator,java.lang.String...)">
+<section class="detail" id="create(com.lab2.service.validation.Validator,java.lang.String...)">
 <h3>create</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="../CriteriaValidator.html" title="interface in by.bsuir.task2.service.validation">CriteriaValidator</a></span>&nbsp;<span class="element-name">create</span>&#8203;<span class="parameters">(<a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;valueValidator,
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="../CriteriaValidator.html" title="interface in by.bsuir.task2.service.validation">CriteriaValidator</a></span>&nbsp;<span class="element-name">create</span>&#8203;<span class="parameters">(<a href="../ValueValidator.html" title="interface in by.bsuir.task2.service.validation">ValueValidator</a>&nbsp;validator,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;allowedTypes)</span></div>
 <div class="block">Creates criteria validator in a simpler way with varargs</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>valueValidator</code> - value validator for search value</dd>
+<dd><code>validator</code> - value validator for search value</dd>
 <dd><code>allowedTypes</code> - allowed search types</dd>
 <dt>Returns:</dt>
 <dd>criteria validator implementation with this parameters</dd>
